@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-  name: "AnyEncodable",
+  name: "AnyCodable",
   products: [
     .library(name: "AnyEncodable", targets: ["AnyEncodable"]),
     .library(name: "AnyDecodable", targets: ["AnyDecodable"]),
