@@ -6,13 +6,17 @@ let package = Package(
   name: "AnyEncodable",
   products: [
     .library(name: "AnyEncodable", targets: ["AnyEncodable"]),
+    .library(name: "AnyDecodable", targets: ["AnyDecodable"]),
   ],
   targets: [
+    .target(name: "AnyEncodable"),
+    .target(name: "AnyDecodable"),
     .target(
-      name: "AnyEncodable",
-      dependencies: []),
     .testTarget(
       name: "AnyEncodableTests",
       dependencies: ["AnyEncodable"]),
+    .testTarget(
+      name: "AnyDecodableTests",
+      dependencies: ["AnyDecodable"]),
   ]
 )
